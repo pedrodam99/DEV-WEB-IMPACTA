@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprints | {% block titulo %}{% endblock %}</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a>BluePrints Exemplo</a>
+            <button>
+                <span>AAAAAAAAAAA</span>
+            </button>
+
+            <div>
+                <ul>
+                    <li>
+                        <a href="{{ url_for('catalogo.index') }}">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    {% block conteudo %}{% endblock %}
+</body>
+
+</html>
