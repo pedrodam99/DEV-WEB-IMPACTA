@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso</title>
+
+<style>
+    body {
+        background-color: #00050b;
+        font-family: MontSerrat;
+        box-sizing: content-box;
+    }
+
+    .content {
+        height: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px
+    }
+    .content h2 {
+        margin-top: 3rem;
+        color: #aaa;
+    }
+    #nome {
+        color: #116fff;
+    }
+</style>
+</head>
+<body>
+    <div class="content">
+        <h1>Obrigado pelo contato <span id="nome">{{nome}}</span>!</h1>
+        <h2>Em breve retornaremos :)</h2>
+    </div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    #header {
+        color: #fff;
+        background-color: #0d181d;
+        height: 4.5rem;
+        margin-bottom: 2rem;
+        border-bottom: #0062f8 solid 0.25rem;
+    }
+    #header {
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    #header a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.5rem;
+        font-family: MontSerrat
+    }
+
+    #header a:hover {
+        color: rgb(189, 189, 189);
+    }
+</style>
+
+</head>
+
+<body>
+    <div id="header">
+        <a href="/">Página Inicial</a>
+        <h1>Faculdade IMPACTA</h1>
+        <a href="/form">Entre em contato</a>
+    </div>
+    <div id="content">{% block conteudo %}{% endblock %}</div>
+</body>
+</html>
